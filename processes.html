@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Processes | RBXY PCB</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config={
+            theme: {
+                extend: {
+                    colors: { primary: '#165DFF', secondary: '#69B1FF', accent: '#0A2463', light: '#F8FAFF', neutral: '#E9EDF7', dark: '#2D3748' },
+                    fontFamily: { inter: ['Inter', 'sans-serif'], space: ['Space Grotesk', 'sans-serif'] },
+                    boxShadow: { 'tech': '0 4px 20px rgba(22, 93, 255, 0.1)', 'tech-hover': '0 8px 30px rgba(22, 93, 255, 0.15)' }
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .bg-gradient-tech { background: linear-gradient(120deg, #F8FAFF 0%, #E9EDF7 100%); }
+            .text-gradient { background-clip: text; -webkit-background-clip: text; color: transparent; background-image: linear-gradient(to right, #165DFF, #69B1FF); }
+            .img-card { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+            .img-card:hover { transform: translateY(-8px); box-shadow: 0 12px 24px rgba(22, 93, 255, 0.15); }
+        }
+    </style>
+</head>
+<body class="font-inter bg-light text-dark antialiased">
+    <header class="sticky top-0 z-50 bg-light/90 backdrop-blur-sm border-b border-neutral shadow-tech">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <a href="index.html" class="flex items-center space-x-2">
+    <img src="logo.png" alt="RBXY PCB Logo" class="h-13 w-auto">
+    <span class="font-space font-bold text-xl text-gradient">RBXY PCB</span>
+</a>
+                <nav class="hidden md:flex space-x-8">
+                    <a href="index.html" class="font-medium text-dark hover:text-primary transition-colors">Home</a>
+                    <a href="about.html" class="font-medium text-dark hover:text-primary transition-colors">About Us</a>
+                    <a href="products.html" class="font-medium text-dark hover:text-primary transition-colors">Products</a>
+                    <a href="processes.html" class="font-medium text-primary">Processes</a>
+                    <a href="quality.html" class="font-medium text-dark hover:text-primary transition-colors">Quality</a>
+                    <a href="contact.html" class="font-medium text-dark hover:text-primary transition-colors">Contact</a>
+                </nav>
+                <button id="mobile-menu-btn" class="md:hidden text-dark hover:text-primary">
+                    <i class="fa-solid fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-light border-b border-neutral px-4 py-3 shadow-tech">
+            <nav class="flex flex-col space-y-3">
+                <a href="index.html" class="font-medium text-dark py-2 hover:text-primary">Home</a>
+                <a href="about.html" class="font-medium text-dark py-2 hover:text-primary">About Us</a>
+                <a href="products.html" class="font-medium text-dark py-2 hover:text-primary">Products</a>
+                <a href="processes.html" class="font-medium text-primary py-2">Processes</a>
+                <a href="quality.html" class="font-medium text-dark py-2 hover:text-primary">Quality</a>
+                <a href="contact.html" class="font-medium text-dark py-2 hover:text-primary">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="py-16 md:py-24 bg-neutral/50">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="font-space font-bold text-[clamp(2rem,4vw,3rem)] text-gradient mb-4">Advanced Processes & Capabilities</h2>
+                <p class="text-lg text-dark/80">
+                    Core processes & advanced manufacturing for high-reliability PCBs.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
+                <!-- 1. Heavy Copper Laminates -->
+                <div class="bg-white rounded-xl shadow-tech p-6 hover:shadow-tech-hover transition-all">
+                    <h3 class="font-space font-bold text-lg mb-2">Heavy Copper Laminates</h3>
+                    <p class="text-dark/70 text-sm">2–10oz copper foils, high current & thermal dissipation. </p>
+                </div>
+                <!-- 2. High Frequency Laminates -->
+                <div class="bg-white rounded-xl shadow-tech p-6 hover:shadow-tech-hover transition-all">
+                    <h3 class="font-space font-bold text-lg mb-2">High Frequency Laminates</h3>
+                    <p class="text-dark/70 text-sm">Rogers, Wangling. Low Df/stable Dk for RF, 5G, automotive radar.</p>
+                </div>
+                <!-- 3. Blind & Buried Via -->
+                <div class="bg-white rounded-xl shadow-tech p-6 hover:shadow-tech-hover transition-all">
+                    <h3 class="font-space font-bold text-lg mb-2">Blind & Buried Via</h3>
+                    <p class="text-dark/70 text-sm">Connect inner layers without through-holes, saving space and improving signal density for HDI.</p>
+                </div>
+                <!-- 4. Via-in-Pad (VIPPO) -->
+                <div class="bg-white rounded-xl shadow-tech p-6 hover:shadow-tech-hover transition-all">
+                    <h3 class="font-space font-bold text-lg mb-2">Via-in-Pad (VIPPO)</h3>
+                    <p class="text-dark/70 text-sm">Epoxy filled & planarized vias under pads, ideal for fine-pitch BGAs.</p>
+                </div>
+                <!-- 5. Laser Drilling -->
+                <div class="bg-white rounded-xl shadow-tech p-6 hover:shadow-tech-hover transition-all">
+                    <h3 class="font-space font-bold text-lg mb-2">Laser Drilling</h3>
+                    <p class="text-dark/70 text-sm">Lasers for microvias down to 0.075mm, high speed, minimal burr.</p>
+                </div>
+                <!-- 6. Depth Controlled Drilling/Milling -->
+                <div class="bg-white rounded-xl shadow-tech p-6 hover:shadow-tech-hover transition-all">
+                    <h3 class="font-space font-bold text-lg mb-2">Depth Controlled Drilling/Milling</h3>
+                    <p class="text-dark/70 text-sm">±0.1mm depth tolerance for blind holes, recesses, heat dissipation grooves.</p>
+                </div>
+                <!-- 7. Back Drilling -->
+                <div class="bg-white rounded-xl shadow-tech p-6 hover:shadow-tech-hover transition-all">
+                    <h3 class="font-space font-bold text-lg mb-2">Back Drilling</h3>
+                    <p class="text-dark/70 text-sm">Removes via stubs in high-speed designs, reduces signal reflection & insertion loss.</p>
+                </div>
+                <!-- 8. Countersink/Counterbore -->
+                <div class="bg-white rounded-xl shadow-tech p-6 hover:shadow-tech-hover transition-all">
+                    <h3 class="font-space font-bold text-lg mb-2">Countersink/Counterbore</h3>
+                    <p class="text-dark/70 text-sm">Conical/cylindrical recesses for flush screw mounting, secure mechanical fixation.</p>
+                </div>
+                <!-- 9. Press-fit Holes -->
+                <div class="bg-white rounded-xl shadow-tech p-6 hover:shadow-tech-hover transition-all">
+                    <h3 class="font-space font-bold text-lg mb-2">Press-fit Holes</h3>
+                    <p class="text-dark/70 text-sm">Tight tolerance (±0.05mm) for solderless press-fit pins.</p>
+                </div>
+                <!-- 10. Edge Plating -->
+                <div class="bg-white rounded-xl shadow-tech p-6 hover:shadow-tech-hover transition-all">
+                    <h3 class="font-space font-bold text-lg mb-2">Edge Plating</h3>
+                    <p class="text-dark/70 text-sm">Metal deposition on board edges for enhanced strength, edge connectors, and EMI shielding.</p>
+                </div>
+                <!-- 11. Hard Gold Plating -->
+                <div class="bg-white rounded-xl shadow-tech p-6 hover:shadow-tech-hover transition-all">
+                    <h3 class="font-space font-bold text-lg mb-2">Hard Gold Plating</h3>
+                    <p class="text-dark/70 text-sm">Gold alloyed with cobalt/nickel, excellent wear resistance. Thickness 0.05–1.27µm.</p>
+                </div>
+                <!-- 12. Selective Hard Gold Plating -->
+                <div class="bg-white rounded-xl shadow-tech p-6 hover:shadow-tech-hover transition-all">
+                    <h3 class="font-space font-bold text-lg mb-2">Selective Hard Gold Plating</h3>
+                    <p class="text-dark/70 text-sm">Applies hard gold only to critical areas (connectors, gold fingers).</p>
+                </div>
+                <!-- 13. ENEPIG -->
+                <div class="bg-white rounded-xl shadow-tech p-6 hover:shadow-tech-hover transition-all">
+                    <h3 class="font-space font-bold text-lg mb-2">ENEPIG</h3>
+                    <p class="text-dark/70 text-sm">Electroless Ni – Pd – Au. Universal for soldering & wire bonding, RoHS compliant, long shelf life.</p>
+                </div>
+                <!-- 14. Hard Gold Plated Fingers -->
+                <div class="bg-white rounded-xl shadow-tech p-6 hover:shadow-tech-hover transition-all">
+                    <h3 class="font-space font-bold text-lg mb-2">Hard Gold Plated Fingers</h3>
+                    <p class="text-dark/70 text-sm">30–50µ” hard gold on edge contacts for memory modules, PCIe cards, high-cycle insertion.</p>
+                </div>
+                <!-- 15. Peelable Mask -->
+                <div class="bg-white rounded-xl shadow-tech p-6 hover:shadow-tech-hover transition-all">
+                    <h3 class="font-space font-bold text-lg mb-2">Peelable Mask</h3>
+                    <p class="text-dark/70 text-sm">Temporary protective coating for selective areas; residue-free removal after soldering.</p>
+                </div>
+                <!-- 16. Carbon Print -->
+                <div class="bg-white rounded-xl shadow-tech p-6 hover:shadow-tech-hover transition-all">
+                    <h3 class="font-space font-bold text-lg mb-2">Carbon Print</h3>
+                    <p class="text-dark/70 text-sm">Conductive carbon paste printed for contact points / jumpers. Cost-effective low-current applications.</p>
+                </div>
+                <!-- 17. Castellated Holes -->
+                <div class="bg-white rounded-xl shadow-tech p-6 hover:shadow-tech-hover transition-all">
+                    <h3 class="font-space font-bold text-lg mb-2">Castellated Holes</h3>
+                    <p class="text-dark/70 text-sm">Half-hole metallized edges for modular PCB soldering directly to motherboards.</p>
+                </div>
+                <!-- 18. Jump V-score -->
+                <div class="bg-white rounded-xl shadow-tech p-6 hover:shadow-tech-hover transition-all">
+                    <h3 class="font-space font-bold text-lg mb-2">Jump V-score</h3>
+                    <p class="text-dark/70 text-sm">Precision V-grooving for panel singulation, clean edges without mechanical stress.</p>
+                </div>
+                <!-- 19. Controlled Impedance -->
+                <div class="bg-white rounded-xl shadow-tech p-6 hover:shadow-tech-hover transition-all">
+                    <h3 class="font-space font-bold text-lg mb-2">Controlled Impedance</h3>
+                    <p class="text-dark/70 text-sm">TDR verification, tolerance ±10% (standard). Prevents reflection & crosstalk.</p>
+                </div>
+                <!-- 20. Tiny PCBs -->
+                <div class="bg-white rounded-xl shadow-tech p-6 hover:shadow-tech-hover transition-all">
+                    <h3 class="font-space font-bold text-lg mb-2">Tiny PCBs</h3>
+                    <p class="text-dark/70 text-sm">Ultra Small PCBs, Minimum size 2mm × 2mm, 3/3 mil lines, microvias. </p>
+                </div>
+                <!-- 21. IPC Class 2 & Class 3 -->
+                <div class="bg-white rounded-xl shadow-tech p-6 hover:shadow-tech-hover transition-all">
+                    <h3 class="font-space font-bold text-lg mb-2">IPC Class 2 & Class 3</h3>
+                    <p class="text-dark/70 text-sm">Fully compliant with IPC standards — Class 2 for commercial, Class 3 for high-reliability & safety.</p>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-tech p-8 mb-12">
+                <h3 class="font-space font-bold text-xl text-accent mb-6">Key Process Parameters</h3>
+                <div class="overflow-x-auto">
+                    <table class="w-full text-sm">
+                        <thead>
+                            <tr class="border-b border-neutral">
+                                <th class="text-left py-3 px-2">Parameter</th>
+                                <th class="text-left py-3 px-2">Capability</th>
+                            </tr>
+                        </thead>
+                        <tbody class="text-dark/70">
+                            <tr class="border-b border-neutral"><td class="py-2 px-2">Min Line/Space</td><td class="py-2 px-2">3/3mil (2.5/2.5mil for HDI)</td></tr>
+                            <tr class="border-b border-neutral"><td class="py-2 px-2">Min Hole</td><td class="py-2 px-2">0.15mm (mech), 0.075mm (laser)</td></tr>
+                            <tr class="border-b border-neutral"><td class="py-2 px-2">Max. Board Width</td><td class="py-2 px-2">600mm</td></tr>
+                            <tr class="border-b border-neutral"><td class="py-2 px-2">Max. Board Length</td><td class="py-2 px-2">1200mm</td></tr>
+                            <tr class="border-b border-neutral"><td class="py-2 px-2">FR-4 Material</td><td class="py-2 px-2">TG140/TG150/TG170/TG180；IT-180A, Ventec VT-901, VT-47, Megtron 6, TUC TU-933+，Halogen-free Material.</td></tr>
+                            <tr class="border-b border-neutral"><td class="py-2 px-2">High Frequency Material</td><td class="py-2 px-2">RO4350B/RO4003C/RT5880/RO6002.</td></tr>
+                            <tr class="border-b border-neutral"><td class="py-2 px-2">Hybrid PCB</td><td class="py-2 px-2">FR-4+Rogers / FR-4+Rigid polyimide material</td></tr>
+                            <tr class="border-b border-neutral"><td class="py-2 px-2">Hole Wall Copper Thickness</td><td class="py-2 px-2">20μm - 35μm</td></tr>
+                            <tr class="border-b border-neutral"><td class="py-2 px-2">Min. Annular Ring - Vias</td><td class="py-2 px-2">2mil</td></tr>
+                            <tr class="border-b border-neutral"><td class="py-2 px-2">Min. Annular Ring - PTH</td><td class="py-2 px-2">4mil</td></tr>
+                            <tr><td class="py-2 px-2">Soldermask Color</td><td class="py-2 px-2">Green/White/Black/Yellow/Red/Blue/Purple/Matte Green/Matte Black.</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                <div class="img-card">
+                    <img src="pcb11.png" alt="LDI " class="w-full h-82 rounded-xl shadow-tech">
+                    <p class="mt-4 text-center font-medium">LDI</p>
+                </div>
+                <div class="img-card">
+                    <img src="pcb12.png" alt="AOI" class="w-full h-82 rounded-xl shadow-tech">
+                    <p class="mt-4 text-center font-medium">AOI</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-accent text-white py-12">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <span class="font-space font-bold text-xl text-white">RBXY PCB</span>
+                    </div>
+                    <p class="text-white/70 mb-4">
+                        Professional Multilayer & HDI PCB Manufacturer.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="font-space font-bold text-lg mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-white/70 hover:text-secondary transition-colors">Home</a></li>
+                        <li><a href="about.html" class="text-white/70 hover:text-secondary transition-colors">About Us</a></li>
+                        <li><a href="products.html" class="text-white/70 hover:text-secondary transition-colors">Products</a></li>
+                        <li><a href="processes.html" class="text-white/70 hover:text-secondary transition-colors">Processes</a></li>
+                        <li><a href="quality.html" class="text-white/70 hover:text-secondary transition-colors">Quality</a></li>
+                        <li><a href="contact.html" class="text-white/70 hover:text-secondary transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-space font-bold text-lg mb-4">Products</h4>
+                    <ul class="space-y-2">
+                        <li><a href="products.html" class="text-white/70 hover:text-secondary transition-colors">Multilayer PCB</a></li>
+                        <li><a href="products.html" class="text-white/70 hover:text-secondary transition-colors">HDI PCB</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-space font-bold text-lg mb-4">Contact</h4>
+                    <p class="text-white/70">Email: sales@rbxy-pcb.com</p>
+                    <p class="text-white/70">Phone: +86-755-27209221</p>
+                </div>
+            </div>
+            <div class="border-t border-white/20 pt-8 text-center">
+                <p class="text-white/70">&copy; 2025 SHENZHEN RUIBOXINGYUAN ELECTRONICS CO LIMITED. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const mobileMenuBtn=document.getElementById('mobile-menu-btn');
+        const mobileMenu=document.getElementById('mobile-menu');
+        mobileMenuBtn.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+    </script>
+</body>
+</html>
