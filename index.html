@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RBXY PCB | Professional Multilayer & HDI PCB Solutions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config={
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#165DFF',
+                        secondary: '#69B1FF',
+                        accent: '#0A2463',
+                        light: '#F8FAFF',
+                        neutral: '#E9EDF7',
+                        dark: '#2D3748'
+                    },
+                    fontFamily: {
+                        inter: ['Inter', 'sans-serif'],
+                        space: ['Space Grotesk', 'sans-serif']
+                    },
+                    boxShadow: {
+                        'tech': '0 4px 20px rgba(22, 93, 255, 0.1)',
+                        'tech-hover': '0 8px 30px rgba(22, 93, 255, 0.15)'
+                    }
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .bg-gradient-tech { background: linear-gradient(120deg, #F8FAFF 0%, #E9EDF7 100%); }
+            .text-gradient { background-clip: text; -webkit-background-clip: text; color: transparent; background-image: linear-gradient(to right, #165DFF, #69B1FF); }
+            .img-card { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+            .img-card:hover { transform: translateY(-8px); box-shadow: 0 12px 24px rgba(22, 93, 255, 0.15); }
+        }
+    </style>
+</head>
+<body class="font-inter bg-light text-dark antialiased">
+    <header class="sticky top-0 z-50 bg-light/90 backdrop-blur-sm border-b border-neutral shadow-tech">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <a href="index.html" class="flex items-center space-x-2">
+    <img src="logo.png" alt="RBXY PCB Logo" class="h-13 w-auto">
+    <span class="font-space font-bold text-xl text-gradient">RBXY PCB</span>
+</a>
+                <nav class="hidden md:flex space-x-8">
+                    <a href="index.html" class="font-medium text-primary">Home</a>
+                    <a href="about.html" class="font-medium text-dark hover:text-primary transition-colors">About Us</a>
+                    <a href="products.html" class="font-medium text-dark hover:text-primary transition-colors">Products</a>
+                    <a href="processes.html" class="font-medium text-dark hover:text-primary transition-colors">Processes</a>
+                    <a href="quality.html" class="font-medium text-dark hover:text-primary transition-colors">Quality</a>
+                    <a href="contact.html" class="font-medium text-dark hover:text-primary transition-colors">Contact</a>
+                </nav>
+                <button id="mobile-menu-btn" class="md:hidden text-dark hover:text-primary">
+                    <i class="fa-solid fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-light border-b border-neutral px-4 py-3 shadow-tech">
+            <nav class="flex flex-col space-y-3">
+                <a href="index.html" class="font-medium text-primary py-2">Home</a>
+                <a href="about.html" class="font-medium text-dark py-2 hover:text-primary">About Us</a>
+                <a href="products.html" class="font-medium text-dark py-2 hover:text-primary">Products</a>
+                <a href="processes.html" class="font-medium text-dark py-2 hover:text-primary">Processes</a>
+                <a href="quality.html" class="font-medium text-dark py-2 hover:text-primary">Quality</a>
+                <a href="contact.html" class="font-medium text-dark py-2 hover:text-primary">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="py-16 md:py-24 bg-gradient-tech">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/2 space-y-6">
+                    <h1 class="font-space font-bold text-[clamp(2.5rem,5vw,4rem)] leading-tight text-gradient">
+                        Professional Multilayer & HDI PCB Manufacturer
+                    </h1>
+                    <p class="text-lg text-dark/80 max-w-lg">
+                        RBXY PCB is your trusted partner for high-quality PCBs, delivering precise, reliable, and cost-effective solutions for global industries.
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="products.html" class="px-8 py-3 bg-primary text-white font-medium rounded-lg shadow-tech hover:shadow-tech-hover transition-all hover:bg-accent">
+                            Explore Products
+                        </a>
+                        <a href="contact.html" class="px-8 py-3 border border-primary text-primary font-medium rounded-lg hover:bg-primary/5 transition-all">
+                            Get Quote
+                        </a>
+                    </div>
+                </div>
+                <div class="md:w-1/2 img-card">
+                    <img src="pcb1.png" alt="High Precision PCB Manufacturing" class="w-full h-auto rounded-xl shadow-tech object-cover">
+                </div>
+            </div>
+            <div class="mt-16 grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="img-card">
+                    <img src="pcb2.png" alt="Multilayer PCB" class="w-full h-64 object-cover rounded-lg">
+                    <p class="mt-3 text-center font-medium">Multilayer PCB (4–40 Layers)</p>
+                </div>
+                <div class="img-card">
+                    <img src="pcb3.png" alt="HDI PCB" class="w-full h-64 object-cover rounded-lg">
+                    <p class="mt-3 text-center font-medium">HDI PCB & Microvia Technology</p>
+                </div>
+                <div class="img-card">
+                    <img src="pcb4.png" alt="IPC Class 3 Quality" class="w-full h-64 object-cover rounded-lg">
+                    <p class="mt-3 text-center font-medium">IPC Class 2 & 3 Compliance</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-accent text-white py-12">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <span class="font-space font-bold text-xl text-white">RBXY PCB</span>
+                    </div>
+                    <p class="text-white/70 mb-4">
+                        Professional Multilayer & HDI PCB Manufacturer.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="font-space font-bold text-lg mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-white/70 hover:text-secondary transition-colors">Home</a></li>
+                        <li><a href="about.html" class="text-white/70 hover:text-secondary transition-colors">About Us</a></li>
+                        <li><a href="products.html" class="text-white/70 hover:text-secondary transition-colors">Products</a></li>
+                        <li><a href="processes.html" class="text-white/70 hover:text-secondary transition-colors">Processes</a></li>
+                        <li><a href="quality.html" class="text-white/70 hover:text-secondary transition-colors">Quality</a></li>
+                        <li><a href="contact.html" class="text-white/70 hover:text-secondary transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-space font-bold text-lg mb-4">Products</h4>
+                    <ul class="space-y-2">
+                        <li><a href="products.html" class="text-white/70 hover:text-secondary transition-colors">Multilayer PCB</a></li>
+                        <li><a href="products.html" class="text-white/70 hover:text-secondary transition-colors">HDI PCB</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-space font-bold text-lg mb-4">Contact</h4>
+                    <p class="text-white/70">Email: sales@rbxy-pcb.com</p>
+                    <p class="text-white/70">Phone: +86-755-27209221</p>
+                </div>
+            </div>
+            <div class="border-t border-white/20 pt-8 text-center">
+                <p class="text-white/70">&copy; 2025 SHENZHEN RUIBOXINGYUAN ELECTRONICS CO LIMITED. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <button id="back-to-top" class="fixed bottom-8 right-8 w-12 h-12 bg-primary text-white rounded-full shadow-tech flex items-center justify-center opacity-0 invisible transition-all hover:bg-accent">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <script>
+        const mobileMenuBtn=document.getElementById('mobile-menu-btn');
+        const mobileMenu=document.getElementById('mobile-menu');
+        mobileMenuBtn.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+
+        const backToTopBtn=document.getElementById('back-to-top');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                backToTopBtn.classList.remove('opacity-0', 'invisible');
+                backToTopBtn.classList.add('opacity-100', 'visible');
+            } else {
+                backToTopBtn.classList.add('opacity-0', 'invisible');
+                backToTopBtn.classList.remove('opacity-100', 'visible');
+            }
+        });
+        backToTopBtn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+    </script>
+</body>
+</html>

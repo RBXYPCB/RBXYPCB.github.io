@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | RBXY PCB</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config={
+            theme: {
+                extend: {
+                    colors: { primary: '#165DFF', secondary: '#69B1FF', accent: '#0A2463', light: '#F8FAFF', neutral: '#E9EDF7', dark: '#2D3748' },
+                    fontFamily: { inter: ['Inter', 'sans-serif'], space: ['Space Grotesk', 'sans-serif'] },
+                    boxShadow: { 'tech': '0 4px 20px rgba(22, 93, 255, 0.1)', 'tech-hover': '0 8px 30px rgba(22, 93, 255, 0.15)' }
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .bg-gradient-tech { background: linear-gradient(120deg, #F8FAFF 0%, #E9EDF7 100%); }
+            .text-gradient { background-clip: text; -webkit-background-clip: text; color: transparent; background-image: linear-gradient(to right, #165DFF, #69B1FF); }
+            .img-card { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+            .img-card:hover { transform: translateY(-8px); box-shadow: 0 12px 24px rgba(22, 93, 255, 0.15); }
+        }
+    </style>
+</head>
+<body class="font-inter bg-light text-dark antialiased">
+    <header class="sticky top-0 z-50 bg-light/90 backdrop-blur-sm border-b border-neutral shadow-tech">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <a href="index.html" class="flex items-center space-x-2">
+    <img src="logo.png" alt="RBXY PCB Logo" class="h-13 w-auto">
+    <span class="font-space font-bold text-xl text-gradient">RBXY PCB</span>
+</a>
+                <nav class="hidden md:flex space-x-8">
+                    <a href="index.html" class="font-medium text-dark hover:text-primary transition-colors">Home</a>
+                    <a href="about.html" class="font-medium text-dark hover:text-primary transition-colors">About Us</a>
+                    <a href="products.html" class="font-medium text-dark hover:text-primary transition-colors">Products</a>
+                    <a href="processes.html" class="font-medium text-dark hover:text-primary transition-colors">Processes</a>
+                    <a href="quality.html" class="font-medium text-dark hover:text-primary transition-colors">Quality</a>
+                    <a href="contact.html" class="font-medium text-primary">Contact</a>
+                </nav>
+                <button id="mobile-menu-btn" class="md:hidden text-dark hover:text-primary">
+                    <i class="fa-solid fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-light border-b border-neutral px-4 py-3 shadow-tech">
+            <nav class="flex flex-col space-y-3">
+                <a href="index.html" class="font-medium text-dark py-2 hover:text-primary">Home</a>
+                <a href="about.html" class="font-medium text-dark py-2 hover:text-primary">About Us</a>
+                <a href="products.html" class="font-medium text-dark py-2 hover:text-primary">Products</a>
+                <a href="processes.html" class="font-medium text-dark py-2 hover:text-primary">Processes</a>
+                <a href="quality.html" class="font-medium text-dark py-2 hover:text-primary">Quality</a>
+                <a href="contact.html" class="font-medium text-primary py-2">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="py-16 md:py-24 bg-neutral/50">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="font-space font-bold text-[clamp(2rem,4vw,3rem)] text-gradient mb-4">Contact Us</h2>
+                <p class="text-lg text-dark/80">
+                    Get customized PCB quotes & professional technical support. Response within 24 hours.
+                </p>
+            </div>
+
+            <div class="flex flex-col lg:flex-row gap-12">
+                <div class="lg:w-1/2 bg-white rounded-xl shadow-tech p-8">
+                    <h3 class="font-space font-bold text-2xl text-accent mb-6">Contact Information</h3>
+                    <div class="space-y-4 text-dark/70">
+                        <div class="flex items-start gap-4">
+                            <i class="fa-solid fa-building text-primary mt-1"></i>
+                            <div>
+                                <h4 class="font-medium">Company</h4>
+                                <p>SHENZHEN RUIBOXINGYUAN ELECTRONICS CO., LIMITED (RBXY PCB)</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <i class="fa-solid fa-envelope text-primary mt-1"></i>
+                            <div>
+                                <h4 class="font-medium">Email</h4>
+                                <p>sales@rbxy-pcb.com</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <i class="fa-solid fa-phone text-primary mt-1"></i>
+                            <div>
+                                <h4 class="font-medium">Phone</h4>
+                                <p>+86-755-27209221</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <i class="fa-solid fa-location-dot text-primary mt-1"></i>
+                            <div>
+                                <h4 class="font-medium">Address</h4>
+                                <p>East area of 3rd floor, Building 2, No 8 Guangtian Road, Luotian Community, Yanluo Street, Baoan District, Shenzhen, Guangdong, 518105, China</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-1/2 img-card">
+                    <img src="contact.jpg" alt="Contact RBXY PCB Team" class="w-full h-auto rounded-xl shadow-tech">
+                </div>
+            </div>
+        </div>
+    </section>
