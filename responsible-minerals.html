@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsible Minerals Sourcing Policy | RBXY PCB</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet" />
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#165DFF',
+                        secondary: '#69B1FF',
+                        accent: '#0A2463',
+                        light: '#F8FAFF',
+                        neutral: '#E9EDF7',
+                        dark: '#2D3748'
+                    },
+                    fontFamily: {
+                        inter: ['Inter', 'sans-serif'],
+                        space: ['Space Grotesk', 'sans-serif']
+                    },
+                    boxShadow: {
+                        'tech': '0 4px 20px rgba(22, 93, 255, 0.1)',
+                        'tech-hover': '0 8px 30px rgba(22, 93, 255, 0.15)'
+                    }
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .bg-gradient-tech {
+                background: linear-gradient(120deg, #F8FAFF 0%, #E9EDF7 100%);
+            }
+            .text-gradient {
+                background-clip: text;
+                -webkit-background-clip: text;
+                color: transparent;
+                background-image: linear-gradient(to right, #165DFF, #69B1FF);
+            }
+            .img-card {
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+            }
+            .img-card:hover {
+                transform: translateY(-8px);
+                box-shadow: 0 12px 24px rgba(22, 93, 255, 0.15);
+            }
+            .policy-section {
+                scroll-margin-top: 80px;
+            }
+            .policy-table {
+                width: 100%;
+                border-collapse: collapse;
+                font-size: 0.95rem;
+            }
+            .policy-table th {
+                background-color: #0A2463;
+                color: white;
+                padding: 0.75rem 1rem;
+                text-align: left;
+            }
+            .policy-table td {
+                padding: 0.75rem 1rem;
+                border-bottom: 1px solid #E9EDF7;
+            }
+            .policy-table tr:nth-child(even) {
+                background-color: #F8FAFF;
+            }
+            .policy-table tr:hover {
+                background-color: #E9EDF7;
+            }
+        }
+    </style>
+</head>
+<body class="font-inter bg-light text-dark antialiased">
+    <!-- ===== HEADER ===== -->
+    <header class="sticky top-0 z-50 bg-light/90 backdrop-blur-sm border-b border-neutral shadow-tech">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <a href="index.html" class="flex items-center space-x-2">
+                    <img src="logo.png" alt="RBXY PCB Logo" class="h-13 w-auto" />
+                    <span class="font-space font-bold text-xl text-gradient">RBXY PCB</span>
+                </a>
+                <nav class="hidden md:flex space-x-8">
+                    <a href="index.html" class="font-medium text-dark hover:text-primary transition-colors">Home</a>
+                    <a href="about.html" class="font-medium text-dark hover:text-primary transition-colors">About Us</a>
+                    <a href="products.html" class="font-medium text-dark hover:text-primary transition-colors">Products</a>
+                    <a href="processes.html" class="font-medium text-dark hover:text-primary transition-colors">Processes</a>
+                    <a href="quality.html" class="font-medium text-dark hover:text-primary transition-colors">Quality</a>
+                    <!-- 新增 Responsible Minerals 链接 -->
+                    <a href="responsible-minerals.html" class="font-medium text-primary">Responsible Minerals</a>
+                    <a href="contact.html" class="font-medium text-dark hover:text-primary transition-colors">Contact</a>
+                </nav>
+                <button id="mobile-menu-btn" class="md:hidden text-dark hover:text-primary">
+                    <i class="fa-solid fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-light border-b border-neutral px-4 py-3 shadow-tech">
+            <nav class="flex flex-col space-y-3">
+                <a href="index.html" class="font-medium text-dark py-2 hover:text-primary">Home</a>
+                <a href="about.html" class="font-medium text-dark py-2 hover:text-primary">About Us</a>
+                <a href="products.html" class="font-medium text-dark py-2 hover:text-primary">Products</a>
+                <a href="processes.html" class="font-medium text-dark py-2 hover:text-primary">Processes</a>
+                <a href="quality.html" class="font-medium text-dark py-2 hover:text-primary">Quality</a>
+                <a href="responsible-minerals.html" class="font-medium text-primary py-2">Responsible Minerals</a>
+                <a href="contact.html" class="font-medium text-dark py-2 hover:text-primary">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ===== MAIN CONTENT ===== -->
+    <main class="py-16 md:py-24 bg-gradient-tech">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-5xl mx-auto bg-white rounded-2xl shadow-tech p-6 sm:p-10 lg:p-14">
+
+                <!-- 页面标题 -->
+                <div class="border-b border-neutral pb-6 mb-8">
+                    <h1 class="font-space font-bold text-[clamp(1.8rem,3.5vw,2.8rem)] text-gradient mb-2">Responsible Minerals Sourcing Policy</h1>
+                    <div class="flex flex-wrap gap-x-6 gap-y-1 text-dark/70 text-sm">
+                        <span><strong>Version:</strong> 1.0</span>
+                        <span><strong>Effective Date:</strong> April 20, 2026</span>
+                    </div>
+                    <p class="text-dark/70 text-sm mt-2">
+                        <strong>Applicable To:</strong> All employees, subsidiaries, affiliates, suppliers, and subcontractors of SHENZHEN RUIBOXINGYUAN ELECTRONICS CO., LIMITED
+                    </p>
+                </div>
+
+                <!-- ===== 1. Policy Statement ===== -->
+                <section class="policy-section mb-10" id="section1">
+                    <h2 class="font-space font-bold text-2xl text-accent mb-4">1. Policy Statement</h2>
+                    <p class="text-dark/70 leading-relaxed mb-3">
+                        SHENZHEN RUIBOXINGYUAN ELECTRONICS CO., LIMITED is committed to conducting business in an ethical, socially responsible, and transparent manner. We recognize that the extraction, transport, and trade of certain minerals may contribute to serious human rights abuses, environmental degradation, and armed conflict in conflict-affected and high-risk areas (CAHRAs).
+                    </p>
+                    <p class="text-dark/70 leading-relaxed mb-3">
+                        As a printed circuit board (PCB) manufacturer and responsible corporate citizen, we are committed to responsible mineral sourcing throughout our supply chain. We do not tolerate, and will not knowingly procure minerals that finance or benefit armed groups, or that are associated with serious human rights abuses, including forced labor, child labor, and other inhumane treatment.
+                    </p>
+                    <p class="text-dark/70 leading-relaxed">
+                        This policy applies to all minerals covered by the Responsible Minerals Initiative (RMI) reporting templates, including those under the Conflict Minerals Reporting Template (CMRT), Extended Minerals Reporting Template (EMRT), and Additional Minerals Reporting Template (AMRT).
+                    </p>
+                </section>
+
+                <!-- ===== 2. Scope ===== -->
+                <section class="policy-section mb-10" id="section2">
+                    <h2 class="font-space font-bold text-2xl text-accent mb-4">2. Scope</h2>
+                    <p class="text-dark/70 leading-relaxed mb-4">
+                        This policy applies to all SHENZHEN RUIBOXINGYUAN ELECTRONICS CO., LIMITED facilities, subsidiaries, and affiliates worldwide, as well as to all direct and indirect suppliers, subcontractors, and business partners that provide materials, components, or services to SHENZHEN RUIBOXINGYUAN ELECTRONICS CO., LIMITED.
+                    </p>
+                    <p class="text-dark/70 leading-relaxed mb-3">
+                        For the purposes of this policy, "covered minerals" include:
+                    </p>
+                    <div class="overflow-x-auto">
+                        <table class="policy-table">
+                            <thead>
+                                <tr>
+                                    <th>Template</th>
+                                    <th>Minerals in Scope</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>CMRT (v6.6)</strong></td>
+                                    <td>Tin, Tungsten, Tantalum, Gold (3TG)</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>EMRT (v2.11)</strong></td>
+                                    <td>Cobalt, Mica, Lithium, Nickel, Copper, Graphite</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>AMRT (v1.31)</strong></td>
+                                    <td>All other minerals not covered by CMRT or EMRT</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+
+                <!-- ===== 3. Guiding Standards ===== -->
+                <section class="policy-section mb-10" id="section3">
+                    <h2 class="font-space font-bold text-2xl text-accent mb-4">3. Guiding Standards and Frameworks</h2>
+                    <p class="text-dark/70 leading-relaxed mb-4">
+                        SHENZHEN RUIBOXINGYUAN ELECTRONICS CO., LIMITED's responsible minerals sourcing program is guided by and aligned with the following internationally recognized standards and frameworks:
+                    </p>
+                    <ul class="list-disc pl-6 space-y-2 text-dark/70">
+                        <li>
+                            <strong>OECD Due Diligence Guidance for Responsible Supply Chains of Minerals from Conflict-Affected and High-Risk Areas</strong> – We adopt the five-step framework for mineral supply chain due diligence.
+                        </li>
+                        <li>
+                            <strong>Responsible Minerals Initiative (RMI) Reporting Templates</strong> – We use the latest versions of CMRT (v6.6), EMRT (v2.11), and AMRT (v1.31) as standardized tools for supply chain data collection.
+                        </li>
+                        <li>
+                            <strong>Responsible Minerals Assurance Process (RMAP)</strong> – We support and encourage participation in RMAP, an independent, third-party audit program for smelters and refiners.
+                        </li>
+                        <li>
+                            <strong>IPC-1755 Responsible Sourcing of Minerals Data Exchange Standard</strong> – Our reporting is aligned with this standard to ensure consistency and efficiency in data exchange.
+                        </li>
+                    </ul>
+                </section>
+
+                <!-- ===== 4. Supply Chain Due Diligence ===== -->
+                <section class="policy-section mb-10" id="section4">
+                    <h2 class="font-space font-bold text-2xl text-accent mb-4">4. Supply Chain Due Diligence</h2>
+                    <p class="text-dark/70 leading-relaxed mb-4">
+                        SHENZHEN RUIBOXINGYUAN ELECTRONICS CO., LIMITED exercises due diligence in accordance with the OECD Guidance through the following measures:
+                    </p>
+
+                    <h3 class="font-space font-semibold text-xl text-primary mt-6 mb-3">4.1 Establish Strong Company Management Systems</h3>
+                    <ul class="list-disc pl-6 space-y-1 text-dark/70">
+                        <li>We maintain and publicly communicate this Responsible Minerals Sourcing Policy.</li>
+                        <li>We have established an internal management system responsible for implementing and monitoring this policy.</li>
+                        <li>We incorporate responsible minerals sourcing requirements into supplier agreements and contracts.</li>
+                        <li>We maintain a grievance mechanism to enable stakeholders to raise concerns regarding mineral sourcing practices.</li>
+                    </ul>
+
+                    <h3 class="font-space font-semibold text-xl text-primary mt-6 mb-3">4.2 Identify and Assess Risks in the Supply Chain</h3>
+                    <ul class="list-disc pl-6 space-y-1 text-dark/70">
+                        <li>We require all direct suppliers to complete and submit the latest versions of CMRT (v6.6), EMRT (v2.11), and/or AMRT (v1.31), as applicable to their supplied materials.</li>
+                        <li>We use the RMI Smelter Reference List to identify smelters, refiners, and processors in our supply chain.</li>
+                        <li>We prioritize sourcing from smelters, refiners, and processors that are listed as RMAP "Conformant" or "Active."</li>
+                    </ul>
+
+                    <h3 class="font-space font-semibold text-xl text-primary mt-6 mb-3">4.3 Design and Implement a Strategy to Respond to Identified Risks</h3>
+                    <ul class="list-disc pl-6 space-y-1 text-dark/70">
+                        <li>We develop and implement risk mitigation plans for identified supply chain risks.</li>
+                        <li>We engage with suppliers to encourage the use of RMAP-conformant smelters and refiners.</li>
+                        <li>We escalate identified risks to senior management and track progress toward mitigation.</li>
+                    </ul>
+
+                    <h3 class="font-space font-semibold text-xl text-primary mt-6 mb-3">4.4 Carry Out Independent Third-Party Audits of Smelters/Refiners/Processors</h3>
+                    <ul class="list-disc pl-6 space-y-1 text-dark/70">
+                        <li>We support and encourage smelters, refiners, and processors in our supply chain to undergo independent third-party audits through the RMAP.</li>
+                        <li>We use RMAP audit results as a key criterion for sourcing decisions.</li>
+                    </ul>
+
+                    <h3 class="font-space font-semibold text-xl text-primary mt-6 mb-3">4.5 Report Annually on Supply Chain Due Diligence</h3>
+                    <ul class="list-disc pl-6 space-y-1 text-dark/70">
+                        <li>We publicly report on our responsible minerals sourcing efforts and due diligence activities.</li>
+                        <li>Our CMRT (v6.6), EMRT (v2.11), and AMRT (v1.31) reports are available upon request or through our designated reporting channels.</li>
+                    </ul>
+                </section>
+
+                <!-- ===== 5. Supplier Requirements ===== -->
+                <section class="policy-section mb-10" id="section5">
+                    <h2 class="font-space font-bold text-2xl text-accent mb-4">5. Supplier Requirements</h2>
+                    <p class="text-dark/70 leading-relaxed mb-3">
+                        All suppliers of SHENZHEN RUIBOXINGYUAN ELECTRONICS CO., LIMITED are required to:
+                    </p>
+                    <ol class="list-decimal pl-6 space-y-2 text-dark/70">
+                        <li>
+                            <strong>Adopt a Responsible Minerals Sourcing Policy</strong> – Establish and implement their own policy consistent with the OECD Guidance and this policy.
+                        </li>
+                        <li>
+                            <strong>Complete RMI Reporting Templates</strong> – Submit the latest versions of CMRT (v6.6), EMRT (v2.11), and/or AMRT (v1.31) to SHENZHEN RUIBOXINGYUAN ELECTRONICS CO., LIMITED on a regular basis.
+                        </li>
+                        <li>
+                            <strong>Use RMAP-Conformant Smelters</strong> – Source minerals only from smelters, refiners, and processors that are conformant with or actively participating in the RMAP, or equivalent independent third-party audit programs.
+                        </li>
+                        <li>
+                            <strong>Provide Accurate and Timely Information</strong> – Respond to our due diligence inquiries promptly and ensure the accuracy and completeness of all reported information.
+                        </li>
+                        <li>
+                            <strong>Flow-Down Requirements</strong> – Cascade this policy and its requirements to their own suppliers and subcontractors.
+                        </li>
+                        <li>
+                            <strong>Cooperate in Risk Mitigation</strong> – Collaborate with SHENZHEN RUIBOXINGYUAN ELECTRONICS CO., LIMITED to identify, assess, and mitigate risks in the supply chain.
+                        </li>
+                    </ol>
+                </section>
+
+                <!-- ===== 6. Mineral-Specific Commitments ===== -->
+                <section class="policy-section mb-10" id="section6">
+                    <h2 class="font-space font-bold text-2xl text-accent mb-4">6. Mineral-Specific Commitments</h2>
+
+                    <h3 class="font-space font-semibold text-xl text-primary mt-6 mb-3">6.1 Conflict Minerals (3TG – Tin, Tungsten, Tantalum, Gold) – CMRT v6.6</h3>
+                    <p class="text-dark/70 leading-relaxed mb-3">
+                        SHENZHEN RUIBOXINGYUAN ELECTRONICS CO., LIMITED is committed to sourcing 3TG minerals only from smelters and refiners that have been validated as conflict-free through the RMAP or equivalent programs. We conduct Reasonable Country of Origin Inquiries (RCOI) to determine the origin of 3TG minerals in our supply chain. We do not knowingly source 3TG minerals from the Democratic Republic of the Congo (DRC) or adjoining countries that directly or indirectly finance armed conflict.
+                    </p>
+
+                    <h3 class="font-space font-semibold text-xl text-primary mt-6 mb-3">6.2 Extended Minerals (Cobalt, Mica, Lithium, Nickel, Copper, Graphite) – EMRT v2.11</h3>
+                    <p class="text-dark/70 leading-relaxed mb-3">
+                        SHENZHEN RUIBOXINGYUAN ELECTRONICS CO., LIMITED is committed to responsible sourcing of extended minerals, recognizing the increased regulatory and stakeholder focus on these materials, particularly in battery and electronics supply chains. We require suppliers to report on cobalt, mica, lithium, nickel, copper, and graphite using EMRT v2.11 and to source these minerals from smelters and processors that have undergone independent third-party due diligence validation.
+                    </p>
+
+                    <h3 class="font-space font-semibold text-xl text-primary mt-6 mb-3">6.3 Additional Minerals – AMRT v1.31</h3>
+                    <p class="text-dark/70 leading-relaxed">
+                        SHENZHEN RUIBOXINGYUAN ELECTRONICS CO., LIMITED is committed to responsible sourcing of all other minerals not covered by CMRT or EMRT. We use AMRT v1.31 to collect supply chain information for additional minerals and to support the identification of smelters, refiners, and processors for potential RMAP audit.
+                    </p>
+                </section>
+
+                <!-- ===== 7. Template Compliance ===== -->
+                <section class="policy-section mb-10" id="section7">
+                    <h2 class="font-space font-bold text-2xl text-accent mb-4">7. Template Compliance and Version Control</h2>
+                    <p class="text-dark/70 leading-relaxed mb-4">
+                        SHENZHEN RUIBOXINGYUAN ELECTRONICS CO., LIMITED requires the use of the latest RMI reporting template versions for all supply chain reporting:
+                    </p>
+                    <div class="overflow-x-auto">
+                        <table class="policy-table">
+                            <thead>
+                                <tr>
+                                    <th>Template</th>
+                                    <th>Version</th>
+                                    <th>Release Date</th>
+                                    <th>Key Features</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>CMRT</strong></td>
+                                    <td>v6.6</td>
+                                    <td>April 17, 2026</td>
+                                    <td>Expanded Product List fields; ISO short-name standardization; updated Smelter Reference List</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>EMRT</strong></td>
+                                    <td>v2.11</td>
+                                    <td>April 17, 2026</td>
+                                    <td>ISO short-name updates; corrected date input; updated Smelter Reference List</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>AMRT</strong></td>
+                                    <td>v1.31</td>
+                                    <td>April 17, 2026</td>
+                                    <td>ISO short-name updates; corrected date input; updated Smelter Reference List</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <p class="text-dark/70 leading-relaxed mt-4">
+                        Suppliers are expected to phase out older template versions and transition to the latest versions for all new submissions. SHENZHEN RUIBOXINGYUAN ELECTRONICS CO., LIMITED will update its reporting processes to reflect the latest template versions and will communicate any changes to suppliers accordingly.
+                    </p>
+                </section>
+
+                <!-- ===== 8. Governance ===== -->
+                <section class="policy-section mb-10" id="section8">
+                    <h2 class="font-space font-bold text-2xl text-accent mb-4">8. Governance and Accountability</h2>
+                    <ul class="list-disc pl-6 space-y-2 text-dark/70">
+                        <li>
+                            <strong>Responsibility:</strong> The Department Supply Chain Management is responsible for the implementation, maintenance, and continuous improvement of this policy.
+                        </li>
+                        <li>
+                            <strong>Training:</strong> SHENZHEN RUIBOXINGYUAN ELECTRONICS CO., LIMITED provides training to relevant employees and suppliers on responsible minerals sourcing requirements and RMI reporting templates.
+                        </li>
+                        <li>
+                            <strong>Monitoring:</strong> We monitor supplier compliance through regular reviews of CMRT, EMRT, and AMRT submissions, and conduct follow-up communications with suppliers reporting non-conformant smelters.
+                        </li>
+                        <li>
+                            <strong>Non-Compliance:</strong> Failure to comply with this policy may result in corrective action, up to and including termination of the supplier relationship.
+                        </li>
+                    </ul>
+                </section>
+
+                <!-- ===== 9. Reporting ===== -->
+                <section class="policy-section mb-10" id="section9">
+                    <h2 class="font-space font-bold text-2xl text-accent mb-4">9. Reporting and Transparency</h2>
+                    <p class="text-dark/70 leading-relaxed mb-3">
+                        SHENZHEN RUIBOXINGYUAN ELECTRONICS CO., LIMITED is committed to transparency in our responsible minerals sourcing efforts. We:
+                    </p>
+                    <ul class="list-disc pl-6 space-y-1 text-dark/70">
+                        <li>Publish this Responsible Minerals Sourcing Policy on our corporate website.</li>
+                        <li>Make our CMRT (v6.6), EMRT (v2.11), and AMRT (v1.31) reports available to customers and stakeholders upon request.</li>
+                        <li>Report annually on our due diligence activities and supply chain risk identification and mitigation efforts.</li>
+                    </ul>
+                </section>
+
+                <!-- ===== 10. Review ===== -->
+                <section class="policy-section mb-6" id="section10">
+                    <h2 class="font-space font-bold text-2xl text-accent mb-4">10. Review and Continuous Improvement</h2>
+                    <p class="text-dark/70 leading-relaxed mb-3">
+                        This policy will be reviewed annually and updated as necessary to reflect changes in:
+                    </p>
+                    <ul class="list-disc pl-6 space-y-1 text-dark/70">
+                        <li>Regulatory requirements and legal obligations</li>
+                        <li>RMI reporting template versions and standards</li>
+                        <li>Industry best practices and emerging risks</li>
+                        <li>Stakeholder expectations and customer requirements</li>
+                    </ul>
+                </section>
+
+                <!-- 底部注脚（政策版本信息） -->
+                <div class="border-t border-neutral pt-6 mt-6 text-sm text-dark/50 text-center">
+                    <p>
+                        This policy is effective as of <strong>April 20, 2026</strong> and supersedes all previous versions.
+                        <br />
+                        Based on OECD Due Diligence Guidance and aligned with RMI CMRT v6.6, EMRT v2.11, and AMRT v1.31.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="bg-accent text-white py-12">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <span class="font-space font-bold text-xl text-white">RBXY PCB</span>
+                    </div>
+                    <p class="text-white/70 mb-4">Professional Multilayer &amp; HDI PCB Manufacturer.</p>
+                </div>
+                <div>
+                    <h4 class="font-space font-bold text-lg mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-white/70 hover:text-secondary transition-colors">Home</a></li>
+                        <li><a href="about.html" class="text-white/70 hover:text-secondary transition-colors">About Us</a></li>
+                        <li><a href="products.html" class="text-white/70 hover:text-secondary transition-colors">Products</a></li>
+                        <li><a href="processes.html" class="text-white/70 hover:text-secondary transition-colors">Processes</a></li>
+                        <li><a href="quality.html" class="text-white/70 hover:text-secondary transition-colors">Quality</a></li>
+                        <li><a href="responsible-minerals.html" class="text-white/70 hover:text-secondary transition-colors">Responsible Minerals</a></li>
+                        <li><a href="contact.html" class="text-white/70 hover:text-secondary transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-space font-bold text-lg mb-4">Products</h4>
+                    <ul class="space-y-2">
+                        <li><a href="products.html" class="text-white/70 hover:text-secondary transition-colors">Multilayer PCB</a></li>
+                        <li><a href="products.html" class="text-white/70 hover:text-secondary transition-colors">HDI PCB</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-space font-bold text-lg mb-4">Contact</h4>
+                    <p class="text-white/70">Email: sales@rbxy-pcb.com</p>
+                    <p class="text-white/70">Phone: +86-755-23573654</p>
+                </div>
+            </div>
+            <div class="border-t border-white/20 pt-8 text-center">
+                <p class="text-white/70">&copy; 2025 SHENZHEN RUIBOXINGYUAN ELECTRONICS CO LIMITED. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===== MOBILE MENU TOGGLE ===== -->
+    <script>
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuBtn.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+    </script>
+</body>
+</html>
